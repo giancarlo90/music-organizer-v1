@@ -59,4 +59,15 @@ public class MusicOrganizer
             files.remove(index);
         }
     }
+    
+    /**
+     * Comprueba si se trata de un indice valido, teniendo en cuenta el tamaño
+     * de la coleccion.
+     */
+    public void checkIndex(int checkNumber)
+    {
+        if(checkNumber < 0 || checkNumber > files.size() -1){
+        System.out.println("Error, el rango valido de valores es entre 0 y " + (files.size() - 1));
+        } 
+    }
 }
