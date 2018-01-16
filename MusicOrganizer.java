@@ -70,4 +70,17 @@ public class MusicOrganizer
         System.out.println("Error, el rango valido de valores es entre 0 y " + (files.size() - 1));
         } 
     }
+    
+        /**
+     * Version alternativa si se trata de un indice valido, teniendo en cuenta el tamaño
+     * de la coleccion.
+     */
+    public boolean validIndex(int checkNumber)
+    {
+        boolean checked = false;
+        if(checkNumber >= 0 && checkNumber <= files.size() -1 && files.size() != 0){
+        checked = true;
+        } 
+        return checked;
+    }
 }
